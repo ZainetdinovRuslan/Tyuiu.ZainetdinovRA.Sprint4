@@ -8,9 +8,9 @@ namespace Tyuiu.ZainetdinovRA.Sprint4.Task2.V5.Lib
             Random random = new Random();
 
             int count = 14;
-            int[] numbers = new int[count];
+            int[] numbers = new int[count]; 
             int result = 1;
-            bool hasEven = false;
+            /* bool hasEven = false;
 
             for (int i = 0; i < count; i++)
             {
@@ -23,6 +23,14 @@ namespace Tyuiu.ZainetdinovRA.Sprint4.Task2.V5.Lib
                 {
                     result *= num;
                     hasEven = true;
+                }
+            } */
+
+            foreach (int num in array)
+            {
+                if (num % 2 == 0)
+                {
+                    result *= num;
                 }
             }
             return result;

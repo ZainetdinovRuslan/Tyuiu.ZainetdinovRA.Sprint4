@@ -26,7 +26,7 @@ namespace Tyuiu.ZainetdinovRA.Sprint4.Task2.V5
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Random random = new Random();
+            /*Random random = new Random();
 
             int count = 14;
             int[] numbers = new int[count];
@@ -45,19 +45,25 @@ namespace Tyuiu.ZainetdinovRA.Sprint4.Task2.V5
                     result *= num;
                     hasEven = true;
                 }
-            }
+            }*/
+
+            int[] array = new int[] {5, 5, 7, 4, 9, 5, 3, 5, 7, 5, 5, 4, 8, 5};
+            int result = ds.Calculate(array);
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ                                                               *");
             Console.WriteLine("***************************************************************************");
 
-            if (hasEven)
+            /*if (hasEven)
             {
                 Console.WriteLine($"Сумма всех четных чисел массива {string.Join(", ", numbers)} равна {result}");
             }
             else
             {
                 Console.WriteLine("В массиве нет четных чисел");
-            }
+            }*/
+
+            Console.WriteLine($"Сумма всех четных чисел массива {string.Join(", ", array)} равна {result}");
         }
     }
 }
